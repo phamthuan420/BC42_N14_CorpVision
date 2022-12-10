@@ -105,8 +105,8 @@ header {
 }
 
 #CarouselID .carousel-caption {
-    top: 30%;
-    bottom: 70%;
+    top: 20%;
+    bottom: 80%;
     transform: translateY(-50% -50%);
     width: 50%;
 }
@@ -144,7 +144,7 @@ header {
     object-fit: cover;
     filter: brightness(60%);
 }
-#CarouselID .btn{
+#CarouselID .btn, #challenges .btn{
     padding: .7rem 3rem;
     font-size: 1rem;
     font-weight: 600;
@@ -154,7 +154,7 @@ header {
     width: 50%;
     margin-left: 0;
 }
-.about__content{
+.about__content, .challenges__content, .challenges__item{
     width: 50%;
 }
 .about__img img{
@@ -169,4 +169,46 @@ header {
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--heading-color);
+}
+
+/* challenges */
+
+.challenges__item .col-6{
+    border-radius: 21px;
+}
+.challenges__item .card{
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    border: 0;
+}
+.card i{
+    font-size: 3rem;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+.challenges__item .row{
+    width: 100%;    
+    margin: 0;
+}
+.challenges_card{
+    width: 100%;
+    height: 160px;
+    box-shadow: 1px 1px 3px #bebebe;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--bg-color);
+    transform: translateY(0);
+    transition: all 1s;
+}
+.challenges_card:hover{
+    box-shadow: 3px 3px 7px #bebebe;
+    transform: translateY(-5%);
+}
+.challenges{
+    background-color: var(--bg-grey);
+    padding: 60px 0;
+}
+h4{
+    font-size: 1.3rem;
 }
