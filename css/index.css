@@ -117,8 +117,8 @@ header {
 #CarouselID .carousel-caption {
     top: 20%;
     bottom: 80%;
-    transform: translateY(-50% -50%);
     width: 50%;
+    transform: translateX(-10%);
 }
 
 .carousel-caption p {
@@ -199,6 +199,8 @@ header {
 
 .challenges__item .col-6 {
     border-radius: 21px;
+    padding-left: 0;
+    padding-top: 0;
 }
 
 .challenges__item .card {
@@ -243,7 +245,7 @@ header {
 h4 {
     font-size: 1.3rem;
 }
-
+/*Luan*/
 /* SERVICES */
 
 .title__big {
