@@ -117,16 +117,12 @@ header {
 #CarouselID .carousel-caption {
     top: 20%;
     bottom: 80%;
-    transform: translateX(2%);
-    
-}
-.carousel-caption h2{
-    max-width: 800px;
+    width: 50%;
+    transform: translateX(-10%);
 }
 
 .carousel-caption p {
     color: white;
-    max-width: 800px;
 }
 
 .portCarousel {
