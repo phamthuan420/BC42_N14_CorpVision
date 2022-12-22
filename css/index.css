@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
     --primary-color: #009f4d;
     --secondary-color: #213364;
@@ -18,24 +19,30 @@
     --iframe-filter: grayscale(0%);
     --bg-grey: #f7f7f7;
     --bg-lightgrey: #f8f9fa;
-    --layer: rgba(29, 42, 55, 0.7);}
+    --layer: rgba(29, 42, 55, 0.7);
+}
+
 body,
 header,
 footer {
     font-family: 'Hind', sans-serif;
     font-family: 'Jost', sans-serif;
 }
-h3{
+
+h3 {
     color: var(--heading-color);
     font-weight: 500;
     font-size: 2rem;
 }
-p{
+
+p {
     color: var(--font-color);
 }
-.title1{
+
+.title1 {
     font-weight: 600;
 }
+
 html {
     font-size: 16px;
 }
@@ -80,16 +87,19 @@ header {
     width: 3rem;
     height: 3rem;
     color: var(--primary-color);
-    border: solid 0 ;
+    border: solid 0;
     border-radius: 50%;
     background: #e0e0e0;
     box-shadow: 0 0 15px rgb(0 0 0 /12%);
     opacity: 1;
     z-index: 2;
 }
-.fa-arrow-right, .fa-arrow-left{
-    color: var(--heading-color) ;
+
+.fa-arrow-right,
+.fa-arrow-left {
+    color: var(--heading-color);
 }
+
 #CarouselID .carousel-control-next {
     right: 40px;
     bottom: 20px;
@@ -101,22 +111,25 @@ header {
     bottom: 20px;
     top: auto;
     left: auto;
-   
+
 }
 
 #CarouselID .carousel-caption {
     top: 20%;
     bottom: 80%;
     transform: translateX(2%);
-    
+
 }
-.carousel-caption h2{
+
+.carousel-caption h2 {
     max-width: 800px;
 }
-.carousel-caption p{
+
+.carousel-caption p {
     color: white;
     max-width: 800px;
 }
+
 .portCarousel {
     position: relative;
 }
@@ -133,42 +146,54 @@ header {
     fill: white;
 }
 
-#CarouselID h2{
+#CarouselID h2 {
     font-size: 4rem;
 }
+
 #CarouselID p {
     font-size: 1.5rem;
-   
+
 }
-#CarouselID .carousel-item{
+
+#CarouselID .carousel-item {
     height: 100vh;
 }
-#CarouselID .carousel-item img{
+
+#CarouselID .carousel-item img {
     height: 100%;
     object-fit: cover;
     filter: brightness(60%);
 }
-#CarouselID .btn, #challenges .btn{
+
+#CarouselID .btn,
+#challenges .btn {
     padding: .7rem 3rem;
     font-size: 1rem;
     font-weight: 600;
 }
+
 /* ABOUT */
-.about__img{
+.about__img {
     width: 50%;
     margin-left: 0;
 }
-.about__content, .challenges__content, .challenges__item{
+
+.about__content,
+.challenges__content,
+.challenges__item {
     width: 50%;
 }
-.about__img img{
+
+.about__img img {
     width: 100%;
     border-radius: 1rem;
 }
-#about i{
+
+#about i {
     font-size: 1rem;
 }
-#about li{
+
+#about li {
     list-style: none;
     font-size: 1.2rem;
     font-weight: 500;
@@ -177,27 +202,31 @@ header {
 
 /* challenges */
 
-.challenges__item .col-6{
+.challenges__item .col-6 {
     border-radius: 21px;
     padding-left: 0;
     padding-top: 0;
 }
-.challenges__item .card{
+
+.challenges__item .card {
     top: 50%;
     bottom: 50%;
     transform: translateY(-50%);
     border: 0;
 }
-.card i{
+
+.card i {
     font-size: 3rem;
     color: var(--primary-color);
     padding-bottom: 1rem;
 }
-.challenges__item .row{
-    width: 100%;    
+
+.challenges__item .row {
+    width: 100%;
     margin: 0;
 }
-.challenges_card{
+
+.challenges_card {
     width: 100%;
     height: 160px;
     box-shadow: 1px 1px 3px #bebebe;
@@ -207,15 +236,266 @@ header {
     transform: translateY(0);
     transition: all 1s;
 }
-.challenges_card:hover{
+
+.challenges_card:hover {
     box-shadow: 3px 3px 7px #bebebe;
     transform: translateY(-5%);
 }
-.challenges{
+
+.challenges {
     background-color: var(--bg-grey);
     padding: 60px 0;
 }
-h4{
+
+h4 {
     font-size: 1.3rem;
 }
 
+/* SERVICES */
+
+.title__big {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.title__small {
+    font-size: 14px;
+    color: #7e7d7d;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.service__image {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.services__info .blog__info {
+    padding: 0 20px;
+    position: relative;
+}
+
+.services__info .blog__info p {
+    font-size: 17px;
+    margin: 0;
+    color: var(--font-color);
+}
+
+.services__title {
+    font-size: 19px;
+    color: var(--heading-color);
+    padding: 12px 35px;
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color);
+    display: inline-block;
+    transform: translateY(-25px);
+    box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.05);
+    font-weight: 600;
+    transition: all .5s;
+}
+
+.services__info:hover .services__title,
+.services__btn:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.services__title:focus {
+    outline: thin dotted;
+}
+
+.services__btn {
+    font-weight: 600;
+    padding: 8px 35px;
+    transition: all .5s;
+}
+
+.services__btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 166 63 / 25%);
+}
+
+/* GALLETY  */
+
+.gallery {
+    background-color: var(--bg-lightgrey);
+}
+
+.gallery__items {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery__items img {
+    transition: .3s ease-in-out;
+}
+
+.gallery__items:hover .gallery__overlay {
+    opacity: 1;
+}
+
+.gallery__items:hover .gallary__info {
+    bottom: 0;
+}
+
+.gallery__items:hover img {
+    transform: scale(1.1);
+}
+
+.gallery__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--layer);
+    opacity: 0;
+    transition: all .3s;
+}
+
+.gallary__info {
+    padding: 46px 50px;
+    display: block;
+    position: absolute;
+    bottom: -100%;
+    transition: all .5s;
+}
+
+.gallary__info h3 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.gallary__info p {
+    margin: 0;
+    color: #eee;
+    font-size: 18px;
+}
+
+.gallery_logos {
+    border-top: 1px solid var(--border-color-light);
+}
+
+.gallery_logos img {
+    padding: 0 18px;
+}
+
+/* PROGRESS  */
+.survey img {
+    border-radius: var(--border-radius);
+}
+
+.survey__info {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.survey .survey__title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: var(--heading-color);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.survey .info1 .survey__title {
+    width: 80%;
+}
+
+.survey .info2 .survey__title {
+    width: 95%;
+}
+
+.survey .info3 .survey__title {
+    width: 60%;
+}
+
+.survey .info4 .survey__title {
+    width: 85%;
+}
+
+.survey .progress {
+    height: 4px;
+    background-color: var(--bg-grey);
+}
+
+.survey .survey__info .progress-bar-striped {
+    background-size: cover;
+}
+
+.survey .survey__info .gradient__1 {
+    color: #61fded;
+    background-image: linear-gradient(45deg, #0d8abc, #61fded);
+}
+
+.survey .survey__info .gradient__2 {
+    color: #eece90;
+    background-image: linear-gradient(45deg, #d45529, #eece90);
+}
+
+.survey .survey__info .gradient__3 {
+    color: #5c51ff;
+    background-image: linear-gradient(45deg, #f646a9, #5c51ff);
+}
+
+.survey .survey__info .gradient__4 {
+    color: #e5529a;
+    background-image: linear-gradient(45deg, #e77654, #e5529a);
+}
+
+.survey .survey__info .gradient__1::before,
+.survey .survey__info .gradient__2::before,
+.survey .survey__info .gradient__3::before,
+.survey .survey__info .gradient__4::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid;
+    transform: translate(-50%, -50%);
+    opacity: .3;
+}
+
+.survey .survey__info .gradient__1::after,
+.survey .survey__info .gradient__2::after,
+.survey .survey__info .gradient__3::after,
+.survey .survey__info .gradient__4::after {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 3px solid;
+    background-color: var(--bg-color);
+    transform: translate(-50%, -50%);
+}
+
+.survey .survey__info .gradient__1::before,
+.survey .survey__info .gradient__1::after {
+    top: 90%;
+    left: 80%;
+}
+
+.survey .survey__info .gradient__2::before,
+.survey .survey__info .gradient__2::after {
+    top: 92%;
+    left: 95%;
+}
+
+.survey .survey__info .gradient__3::before,
+.survey .survey__info .gradient__3::after {
+    top: 90%;
+    left: 60%;
+}
+
+.survey .survey__info .gradient__4::before,
+.survey .survey__info .gradient__4::after {
+    top: 92%;
+    left: 85%;
+}
+
+/* ------- */
