@@ -36,13 +36,17 @@
     <!-- My Css PC-->
     <link rel="stylesheet" href="./css/index.css">
 
+    <!-- Phong thêm css -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
     <!-- My Css Mobile -->
     <link rel="stylesheet" href="./css/indexMobile.css">
 
 </head>
 
 <body>
-<!-- Pham Thuan BC42  -->
+    <!-- Pham Thuan BC42  -->
     <header class="fixed-top nav-fixed ">
         <nav class="container navbar navbar-expand-lg navbar-dark">
             <div class="container">
@@ -134,7 +138,7 @@
                         <a class="btn btn-success animate__animated animate__fadeInUp animate__delay-2s" href="#"
                             role="button">Get Started</a>
                     </div>
-                    
+
                 </div>
                 <div class="carousel-item">
                     <img src="./img/b2.jpeg" class="d-block w-100" alt="...">
@@ -247,10 +251,99 @@
             </div>
         </div>
     </section>
-<!-- LuanBC42  -->
+    <!-- LuanBC42  -->
 
 
-<!-- PhongBC42  -->
+    <!-- PhongBC42  -->
+    <section class="w3l-testimonials" id="testimonials">
+        <div class="cusrtomer-layout py-5" id="feedback">
+            <div class="container">
+                <h5 class="title-small text-center mb-1">HAPPY CLIENTS FEEDBACK</h5>
+                <h3 class="title-big text-center mb-sm-5 mb-4">Reviews and Testimonials</h3>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="testimonial-content">
+                            <div class="testimonial">
+                                <blockquote>
+                                    <q>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                                        voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                        Dolores molestias adipisci dolo amet!.</q>
+                                </blockquote>
+                                <div class="testi-des">
+                                    <div class="test-img">
+                                        <img src="./img/team1.jpeg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="peopl align-self">
+                                        <h3>John wilson</h3>
+                                        <p>Student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-content">
+                            <div class="testimonial">
+                                <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                                    voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                    Dolores molestias adipisci dolo amet!.</p>
+                                <div class="testi-des">
+                                    <div class="test-img">
+                                        <img src="./img/team2.jpeg" alt="">
+                                    </div>
+                                    <div class="peopl align-self">
+                                        <h3>Julia sakura</h3>
+                                        <p>Student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-content">
+                            <div class="testimonial">
+                                <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                                    voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                    Dolores molestias adipisci dolo amet!.</p>
+                                <div class="testi-des">
+                                    <div class="test-img">
+                                        <img src="./img/team3.jpeg" alt="">
+                                    </div>
+                                    <div class="peopl align-self">
+                                        <h3>Roy Linderson</h3>
+                                        <p>Student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-content">
+                            <div class="testimonial">
+                                <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                                    voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                    Dolores molestias adipisci dolo amet!.</p>
+                                <div class="testi-des">
+                                    <div class="test-img">
+                                        <img src="./img/team4.jpeg" alt="">
+                                    </div>
+                                    <div class="peopl align-self">
+                                        <h3>Smith Johnson</h3>
+                                        <p>Student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
 
 
     <!-- Optional JavaScript -->
@@ -264,6 +357,27 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+
+    <!-- Phong thêm js -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
