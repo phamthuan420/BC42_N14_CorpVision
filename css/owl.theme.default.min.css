@@ -52,7 +52,8 @@
     display: block;
     -webkit-backface-visibility: visible;
     transition: opacity .2s ease;
-    border-radius: 30px
+    border-radius: 30px;
+
 }
 
 .owl-theme .owl-dots .owl-dot.active span,

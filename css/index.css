@@ -39,6 +39,8 @@ p {
     color: var(--font-color);
 }
 
+
+
 .title1 {
     font-weight: 600;
 }
@@ -385,7 +387,7 @@ blockquote {
 }
 
 .w3l-testimonials blockquote q {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
     color: var(--font-color);
     opacity: .8;
