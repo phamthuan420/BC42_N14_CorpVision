@@ -353,6 +353,14 @@ element.style {
     user-select: none;
 }
 
+#testimonials .owl-carousel.owl-theme .owl-dots {
+    position: inherit;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-top: 30px;
+}
+
 .w3l-testimonials .testimonial {
     display: block;
     padding: 40px 30px;
@@ -484,6 +492,11 @@ img {
     opacity: 1;
 }
 
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--secondary-color);
+}
+
 .owl-theme .owl-nav [class*=owl-] {
     color: #fff;
     font-size: 20px;
@@ -556,6 +569,7 @@ button.owl-prev {
     display: inline-block;
     zoom: 1;
     background: transparent;
+    padding: 1px 6px;
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
@@ -593,6 +607,8 @@ body button:hover {
     background: var(--secondary-color);
     opacity: 1;
 }
+
+
 
 .owl-theme .owl-dots .owl-dot:hover span {
     transform: scale(1.5);
@@ -646,10 +662,7 @@ section {
     text-align: center;
 }
 
-.col-lg-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-}
+
 
 
 
@@ -659,6 +672,12 @@ section {
     box-shadow: 0 20px 40px 0 rgb(50 65 141 / 12%);
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 4%);
     border: 1px solid var(--border-color);
+}
+
+.w3l-blog .card:hover img {
+    overflow: hidden;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
 }
 
 .card {
@@ -1219,11 +1238,6 @@ span {
 .mt-md-4,
 .my-md-4 {
     margin-top: 1.5rem;
-}
-
-.col-lg-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%;
 }
 
 .main-social-footer-29 a {
