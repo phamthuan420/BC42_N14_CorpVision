@@ -37,6 +37,9 @@
     <!-- LIGHTBOX -->
     <link rel="stylesheet" href="./css/lightbox.min.css">
 
+    <!-- OWL -->
+    <link rel="stylesheet" href="css/owl.min.css">
+
     <!-- My Css PC-->
     <link rel="stylesheet" href="./css/index.css">
 
@@ -768,12 +771,11 @@
 
                         <p class="mb-2">Support : <a href="mailto:info@support.com">
                                 info@support.com</a></p>
-
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-lg-0 mt-5">
                         <div id="categories-4" class="widget_categories">
                             <h6 class="footer-title-29">Categories</h6>
-                            <ul>
+                            <ul class="pl-0">
                                 <li class="cat-item cat-item-2"><a
                                         href="https://wp.w3layouts.com/corpvision/category/marketing-strategy/">Marketing
                                         Strategy</a>
@@ -787,13 +789,12 @@
                                         development</a>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-lg-0 mt-5">
                         <div id="meta-4" class="widget_meta">
                             <h6 class="footer-title-29">Meta</h6>
-                            <ul>
+                            <ul class="pl-0">
                                 <li><a href="https://wp.w3layouts.com/corpvision/wp-login.php">Log
                                         in</a></li>
                                 <li><a href="https://wp.w3layouts.com/corpvision/feed/">Entries
@@ -837,6 +838,34 @@
 
     <!-- JS LIGHTBOX -->
     <script src="./js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- OWL -->
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    768: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
