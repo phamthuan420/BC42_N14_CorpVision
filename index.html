@@ -93,8 +93,8 @@
                         <nav class="navigation ">
                             <div class="theme-switch-wrapper">
                                 <div class="mode-container">
-                                    <i class="fa-regular fa-moon "></i>
-                                    <i class="fa-solid fa-sun"></i>
+                                    <i class="fa-regular fa-moon" id="switchMoon"></i>
+                                    <i class="fa-solid fa-sun " id="switchSun"></i>
                                 </div>
                                 </label>
                             </div>
@@ -394,7 +394,7 @@
                 <div class="col-lg-2 col-md-3 col-4 mt-md-0 mt-4">
                     <img src="./img/brand4.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-lg-2 col-md-3 col-4 mt-md-0 mt-4">
+                <div class="col-lg-2 col-md-3 col-4 mt-lg-0 mt-4">
                     <img src="./img/brand5.png" alt="" class="img-fluid">
                 </div>
             </div>
@@ -462,6 +462,44 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- Btn Light, Dark -->
+    <script>
+        let root = document.querySelector(":root").style;
+        let moon = document.getElementById("switchMoon");
+        let sun = document.getElementById("switchSun");
+        moon.onclick = function () {
+            root.setProperty('--font-color', "#c2c2c2");
+            root.setProperty('--bg-color', "#151421");
+            root.setProperty('--heading-color', "#eee");
+            root.setProperty('--border-color', "rgba(255, 255, 255, 0.2)");
+            root.setProperty('--border-color-light', "rgba(255, 255, 255, 0.1)");
+            root.setProperty('--nav-color', "#fff");
+            root.setProperty('--dropdown-color', "#121725");
+            root.setProperty(' --iframe-filter', "grayscale(100%)");
+            root.setProperty('--bg-grey', "#100f19");
+            root.setProperty('--bg-lightgrey', "#100f19");
+            root.setProperty('--layer', "rgba(29, 42, 55, 0.8)");
+            moon.style.display = "none"
+            sun.style.display = "block"
+        }
+        sun.onclick = function () {
+            root.setProperty('--font-color', "#666");
+            root.setProperty('--bg-color', "#fff");
+            root.setProperty('--heading-color', "#3f3a64");
+            root.setProperty('--border-color', "transparent");
+            root.setProperty('--border-color-light', "#eee");
+            root.setProperty('--nav-color', "#292922");
+            root.setProperty('--dropdown-color', "#fff");
+            root.setProperty(' --iframe-filter', "grayscale(0%)");
+            root.setProperty('--bg-grey', "#f7f7f7");
+            root.setProperty('--bg-lightgrey', "#f8f9fa");
+            root.setProperty('--layer', "rgba(29, 42, 55, 0.7)");
+            sun.style.display = "none"
+            moon.style.display = "block"
+        }
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
