@@ -29,6 +29,10 @@ footer {
     font-family: 'Jost', sans-serif;
 }
 
+body a:hover {
+    color: #009f4d;
+}
+
 h3 {
     color: var(--heading-color);
     font-weight: 500;
@@ -48,15 +52,113 @@ p {
 html {
     font-size: 16px;
 }
+/* nav mobile  */
+button.navbar-toggler .icon-close {
+    display: block;
+}
 
+button.navbar-toggler .icon-expand {
+    display: none;
+}
+
+button.navbar-toggler.collapsed .icon-close {
+    display: none;
+}
+
+button.navbar-toggler.collapsed .icon-expand {
+    display: block;
+}
+
+.fa-times:before,
+.fa-bars:before {
+    content: "";
+}
+header.active{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+header.active .logo__name{
+    color: #fff;
+}
+header.active .logo__slogan{
+    color: #fff;
+}
+header.active #icon-seach{
+    position: absolute;
+    top:25px;
+    right: 140px;
+}
+header.active .DarkandLight{
+    position: absolute;
+    top:35px;
+    right: 90px;
+}
+header.active #switchMoon{
+    color: var(--heading-color);
+}
+header.nav-fixed.active {
+    height: auto
+}
+header.active #navbarSupportedContent li a {
+    color: #fff;    
+    text-align:center;
+}
+header.nav-fixed.active #navbarSupportedContent li a{
+    color: var(--heading-color);
+}
+header.active .dropdown-menu{
+    background-color: var(--bg-color);
+    padding: 10px 60px;
+    box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
+}
+#navbarSupportedContent a {
+    color: #fff;
+}
+header.active #navbarSupportedContent .show .dropdown-item{
+    color: var(--heading-color);
+}
 /* Nav  */
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
     width: 100%;
+    top: 0;
+    border-bottom: .2px solid white;
+}
 
+header.nav-fixed {
+    padding: 0px;
+    background-color: var(--bg-color);
+    height: 100px;
+    border-bottom: none;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+
+header.nav-fixed #navbarSupportedContent a {
+    color: var(--font-color);
+}
+
+header.nav-fixed #navbarSupportedContent .active a {
+    color: var(--primary-color);
+}
+
+header.nav-fixed .logo__name {
+    color: var(--heading-color);
+}
+
+header.nav-fixed .logo__slogan {
+    color: var(--heading-color);
+}
+
+header.nav-fixed #switchMoon {
+    color: var(--heading-color);
+}
+
+header.nav-fixed #switchSun {
+    color: var(--heading-color);
+}
+
+.container .navbar-toggler {
+    background-color: #009f4d;
+    color: rgb(255, 255, 255);
 }
 
 .logo__name {
@@ -75,6 +177,13 @@ header {
 
 }
 
+#icon-seach {
+    background-color: #10a248;
+    padding: 10px 15px;
+    border-radius: 50%;
+    color: white;
+}
+
 .fa-align-right {
     font-size: 2rem;
     color: var(--primary-color);
@@ -82,6 +191,7 @@ header {
 
 .navbar-nav .nav-item .nav-link {
     font-weight: 500;
+    color: var(--bg-color);
 }
 
 #CarouselID .carousel-control-next,
@@ -91,8 +201,8 @@ header {
     color: var(--primary-color);
     border: solid 0;
     border-radius: 50%;
-    background: #e0e0e0;
-    box-shadow: 0 0 15px rgb(0 0 0 /12%);
+    background: var(--bg-color);
+    box-shadow: 0 0 3px var(--heading-color);
     opacity: 1;
     z-index: 2;
 }
@@ -117,12 +227,13 @@ header {
 }
 
 #CarouselID .carousel-caption {
+    width: 100%;
     top: 20%;
     bottom: 80%;
-    transform: translateX(2%);
+    /* transform: translateX(0%); */
+    padding: 0 20px;
 
 }
-
 .carousel-caption h2 {
     max-width: 800px;
 }
@@ -145,8 +256,7 @@ header {
 }
 
 .shape path {
-    fill: white;
-    /* fill: var(--bg-color;) */
+    fill: var(--bg-color);
 }
 
 #CarouselID h2 {
@@ -165,6 +275,7 @@ header {
 #CarouselID .carousel-item img {
     height: 100%;
     object-fit: cover;
+    background-repeat: no-repeat;
     filter: brightness(60%);
 }
 
@@ -176,6 +287,10 @@ header {
 }
 
 /* ABOUT */
+.about {
+    background-color: var(--bg-color);
+}
+
 .about__img {
     width: 50%;
     margin-left: 0;
@@ -232,7 +347,7 @@ header {
 .challenges_card {
     width: 100%;
     height: 160px;
-    box-shadow: 1px 1px 3px #bebebe;
+    box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
     text-align: center;
     border-radius: 10px;
     background-color: var(--bg-color);
@@ -240,8 +355,12 @@ header {
     transition: all 1s;
 }
 
+.challenges_card .card {
+    background-color: rgba(255, 255, 255, 0);
+}
+
 .challenges_card:hover {
-    box-shadow: 3px 3px 7px #bebebe;
+    box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
     transform: translateY(-5%);
 }
 
@@ -250,8 +369,13 @@ header {
     padding: 60px 0;
 }
 
+h4 a {
+    color: var(--heading-color);
+}
+
 h4 {
     font-size: 1.3rem;
+    color: var(--heading-color);
 }
 
 

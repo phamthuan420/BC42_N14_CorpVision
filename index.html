@@ -50,7 +50,7 @@
 
 <body>
     <!-- Pham Thuan BC42  -->
-    <header class="fixed-top nav-fixed ">
+    <header class="fixed-top main-header">
         <nav class="container navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -58,10 +58,17 @@
                     <span class="logo__name">Corp Vision</span>
                     <span class="logo__slogan">Vision to your Future</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                    <span id="bars" class=" fa icon-expand fa-bars"></span>
+                    <span id="xmark" class=" fa icon-close fa-xmark"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -91,11 +98,11 @@
                             <a class="nav-link">CONTACT</a>
                         </li>
                     </ul>
-                    <i class="fa-solid fa-magnifying-glass "></i>
+                    <div id="icon-seach"><i class="fa-solid fa-magnifying-glass "></i></div>
                     <div class="mobile-position text-center DarkandLight">
                         <nav class="navigation ">
                             <div class="theme-switch-wrapper">
-                                <div class="mode-container">
+                                <div class="mode-container" id="icon-light">
                                     <i class="fa-regular fa-moon" id="switchMoon"></i>
                                     <i class="fa-solid fa-sun " id="switchSun"></i>
                                 </div>
@@ -188,7 +195,7 @@
                 <h3>We make the best strategies for you, Enhancing your success</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea.</p>
-                <ul>
+                <ul class="p-0">
                     <li><i class="fa-solid fa-circle-check text-success"></i>
                         UI/UX Design and Development</li>
                     <li><i class="fa-solid fa-circle-check text-success"></i>
@@ -222,7 +229,7 @@
                         <div class="challenges_card">
                             <div class="card">
                                 <i class="fa-solid fa-gear"></i>
-                                <h4>Our Process</h4>
+                                <h4><a href="#">Our Process</a></h4>
                             </div>
                         </div>
                     </div>
@@ -230,7 +237,7 @@
                         <div class="challenges_card">
                             <div class="card">
                                 <i class="fa-solid fa-user "></i>
-                                <h4>How We Help</h4>
+                                <h4><a href="#">How We Help</a> </h4>
                             </div>
                         </div>
                     </div>
@@ -238,7 +245,7 @@
                         <div class="challenges_card">
                             <div class="card">
                                 <i class="fa-solid fa-image"></i>
-                                <h4>UI/UX Design</h4>
+                                <h4><a href="#">UI/UX Design</a></h4>
                             </div>
                         </div>
                     </div>
@@ -246,7 +253,7 @@
                         <div class="challenges_card">
                             <div class="card">
                                 <i class="fa-solid fa-lightbulb"></i>
-                                <h4>Creative Ideas</h4>
+                                <h4><a href="#">Creative Ideas</a></h4>
                             </div>
                         </div>
                     </div>
@@ -902,6 +909,27 @@
                 }
             })
         })
+    </script>
+    <!-- Header  -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop()) {
+                    $("header").addClass("nav-fixed");
+                } else {
+                    $("header").removeClass("nav-fixed");
+                }
+            })
+        })
+        document.getElementById("bars").onclick = function () {
+            $("header").addClass("active");
+            $('header nav div div ul').addClass("align-items-center");
+
+        }
+        document.getElementById("xmark").onclick = function () {
+            $("header").removeClass("active");
+        }
+       
     </script>
 </body>
 
