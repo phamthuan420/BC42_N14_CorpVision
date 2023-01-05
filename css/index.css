@@ -146,6 +146,7 @@ header {
 
 .shape path {
     fill: white;
+    /* fill: var(--bg-color;) */
 }
 
 #CarouselID h2 {
@@ -252,19 +253,6 @@ header {
 h4 {
     font-size: 1.3rem;
 }
-
-/* SERVICES */
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* PHONG CSS */
@@ -1375,6 +1363,12 @@ span {
     transition: 0.3s ease-out;
 }
 
+
+/* SERVICES */
+.services {
+    background-color: var(--bg-color);
+}
+
 .title__big {
     font-size: 35px;
     font-weight: 600;
@@ -1416,6 +1410,7 @@ span {
     box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.05);
     font-weight: 600;
     transition: all .5s;
+    border: 1px solid var(--border-color);
 }
 
 .services__info:hover .services__title,
@@ -1432,6 +1427,7 @@ span {
     font-weight: 600;
     padding: 8px 35px;
     transition: all .5s;
+    color: var(--heading-color);
 }
 
 .services__btn:focus {
@@ -1506,6 +1502,10 @@ span {
 }
 
 /* PROGRESS  */
+.survey {
+    background-color: var(--bg-color);
+}
+
 .survey img {
     border-radius: var(--border-radius);
 }
@@ -1619,6 +1619,22 @@ span {
 .survey .survey__info .gradient__4::after {
     top: 92%;
     left: 85%;
+}
+
+
+#switchMoon,
+#switchSun {
+    font-size: 26px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+#switchSun {
+    display: none;
+}
+
+#switchMoon {
+    display: block;
 }
 
 /* ------- */
