@@ -52,7 +52,6 @@ p {
 html {
     font-size: 16px;
 }
-
 /* nav mobile  */
 button.navbar-toggler .icon-close {
     display: block;
@@ -65,7 +64,6 @@ button.navbar-toggler .icon-expand {
 button.navbar-toggler.collapsed .icon-close {
     display: none;
 }
-
 button.navbar-toggler.collapsed .icon-expand {
     display: block;
 }
@@ -74,7 +72,6 @@ button.navbar-toggler.collapsed .icon-expand {
 .fa-bars:before {
     content: "";
 }
-
 header.active {
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -181,7 +178,6 @@ header.nav-fixed .logo__slogan {
 header.nav-fixed #switchMoon {
     color: var(--heading-color);
 }
-
 header.nav-fixed #switchSun {
     color: var(--heading-color);
 }
@@ -264,7 +260,6 @@ header.nav-fixed #switchSun {
     padding: 0 20px;
 
 }
-
 .carousel-caption h2 {
     max-width: 800px;
 }
