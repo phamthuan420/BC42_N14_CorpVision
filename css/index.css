@@ -52,6 +52,7 @@ p {
 html {
     font-size: 16px;
 }
+
 /* nav mobile  */
 button.navbar-toggler .icon-close {
     display: block;
@@ -126,14 +127,6 @@ header.active .dropdown-menu {
 header.active #navbarSupportedContent .show .dropdown-item {
     color: var(--heading-color);
 }
-/* BACKTOTOP */
-#movetop--is-visible { // back-to-top button visible
-    visibility: visible;
-    opacity: 1;
-  }
-#movetop--fade-out { // reduce button opacity if user keeps scrolling
-    opacity: .5;
-  }
 /* Nav  */
 header {
     width: 100%;
@@ -260,6 +253,7 @@ header.nav-fixed #switchSun {
     padding: 0 20px;
 
 }
+
 .carousel-caption h2 {
     max-width: 800px;
 }
@@ -343,7 +337,9 @@ header.nav-fixed #switchSun {
     font-weight: 500;
     color: var(--heading-color);
 }
-
+#about .row{
+    margin: 0;
+}
 /* challenges */
 
 .challenges__item .col-6 {
