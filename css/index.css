@@ -52,6 +52,7 @@ p {
 html {
     font-size: 16px;
 }
+
 /* nav mobile  */
 button.navbar-toggler .icon-close {
     display: block;
@@ -73,49 +74,69 @@ button.navbar-toggler.collapsed .icon-expand {
 .fa-bars:before {
     content: "";
 }
-header.active{
+
+header.active {
     background-color: rgba(0, 0, 0, 0.7);
 }
-header.active .logo__name{
+
+header.active .logo__name {
     color: #fff;
 }
-header.active .logo__slogan{
+
+header.active .logo__slogan {
     color: #fff;
 }
-header.active #icon-seach{
+
+header.active #icon-seach {
     position: absolute;
-    top:25px;
+    top: 25px;
     right: 140px;
 }
-header.active .DarkandLight{
+
+header.active .DarkandLight {
     position: absolute;
-    top:35px;
+    top: 35px;
     right: 90px;
 }
-header.active #switchMoon{
+
+header.active #switchMoon {
     color: var(--heading-color);
 }
+
 header.nav-fixed.active {
     height: auto
 }
+
 header.active #navbarSupportedContent li a {
-    color: #fff;    
-    text-align:center;
+    color: #fff;
+    text-align: center;
 }
-header.nav-fixed.active #navbarSupportedContent li a{
+
+header.nav-fixed.active #navbarSupportedContent li a {
     color: var(--heading-color);
 }
-header.active .dropdown-menu{
+
+header.active .dropdown-menu {
     background-color: var(--bg-color);
     padding: 10px 60px;
     box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
 }
+
 #navbarSupportedContent a {
     color: #fff;
 }
-header.active #navbarSupportedContent .show .dropdown-item{
+
+header.active #navbarSupportedContent .show .dropdown-item {
     color: var(--heading-color);
 }
+/* BACKTOTOP */
+#movetop--is-visible { // back-to-top button visible
+    visibility: visible;
+    opacity: 1;
+  }
+#movetop--fade-out { // reduce button opacity if user keeps scrolling
+    opacity: .5;
+  }
 /* Nav  */
 header {
     width: 100%;
@@ -131,6 +152,15 @@ header.nav-fixed {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 }
 
+.bg-overlay {
+    background: var(--layer);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+}
 
 header.nav-fixed #navbarSupportedContent a {
     color: var(--font-color);
@@ -234,6 +264,7 @@ header.nav-fixed #switchSun {
     padding: 0 20px;
 
 }
+
 .carousel-caption h2 {
     max-width: 800px;
 }
@@ -776,7 +807,10 @@ section {
 
 
 
-
+.w3l-blog {
+    background-color: var(--bg-color);
+    transition: all .5s;
+}
 
 .w3l-blog .card {
     border: none;

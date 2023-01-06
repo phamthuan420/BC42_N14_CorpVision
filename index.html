@@ -49,6 +49,7 @@
 </head>
 
 <body>
+
     <!-- Pham Thuan BC42  -->
     <header class="fixed-top main-header">
         <nav class="container navbar navbar-expand-lg navbar-dark">
@@ -148,6 +149,7 @@
                         <a class="btn btn-success animate__animated animate__fadeInUp animate__delay-2s" href="#"
                             role="button">Get Started</a>
                     </div>
+                    <div class="bg-overlay"></div>
 
                 </div>
                 <div class="carousel-item">
@@ -162,6 +164,7 @@
                         <a class="btn btn-success animate__animated animate__fadeInDown animate__delay-2s" href="#"
                             role="button">Get Started</a>
                     </div>
+                    <div class="bg-overlay"></div>
                 </div>
                 <div class="carousel-item">
                     <img src="./img/b3.jpeg" class="d-block w-100" alt="...">
@@ -175,6 +178,7 @@
                         <a class="btn btn-success animate__animated animate__fadeInDown animate__delay-2s" href="#"
                             role="button">Get Started</a>
                     </div>
+                    <div class="bg-overlay"></div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-target="#CarouselID" data-slide="prev">
@@ -261,6 +265,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- LuanBC42  -->
     <!-- *** -->
@@ -929,7 +934,29 @@
         document.getElementById("xmark").onclick = function () {
             $("header").removeClass("active");
         }
-       
+
+    </script>
+
+    <!-- BackToTop -->
+    <script>
+        let mybutton = document.getElementById("movetop");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
     </script>
 </body>
 
