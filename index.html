@@ -99,7 +99,18 @@
                             <a class="nav-link">CONTACT</a>
                         </li>
                     </ul>
-                    <div id="icon-seach"><i class="fa-solid fa-magnifying-glass "></i></div>
+                    <div class="header-search HeaderSearch">
+                        <div class=" control mr-3">
+                            <div id="icon-seach" class="btn-material" onclick="openSearch()" ><i class="fa-solid fa-magnifying-glass " id="icon-search1"></i></div>
+                        </div>
+                        <!-- full screen form controls -->
+                        <div id="formSearch" class="fixed-top">
+                            <i class="fa fa-times-circle" aria-hidden="true" onclick="offSearch()"></i>
+                            <form method="GET" class="search-input">
+                                <input class="input-search" name="s" placeholder="Start Typing" type="text">
+                            </form>
+                        </div>
+                    </div>
                     <div class="mobile-position text-center DarkandLight">
                         <nav class="navigation ">
                             <div class="theme-switch-wrapper">
@@ -956,6 +967,18 @@
         function topFunction() {
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    <script>
+        function openSearch() {
+            document.getElementById("formSearch").style.display = "block";
+            $("header").addClass("search-active");
+            document.getElementById("icon-search1").style.display = "none";
+        }
+        function offSearch() {
+            document.getElementById("formSearch").style.display = "none";
+            $("header").removeClass("search-active");
+            document.getElementById("icon-search1").style.display = "block";
         }
     </script>
 </body>
