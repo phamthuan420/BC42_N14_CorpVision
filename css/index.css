@@ -127,7 +127,6 @@ header.active .dropdown-menu {
 header.active #navbarSupportedContent .show .dropdown-item {
     color: var(--heading-color);
 }
-<<<<<<< HEAD
 /* Search */
 header.search-active .btn-material{
     transform: scale(170);
@@ -173,8 +172,7 @@ header #formSearch .fa-times-circle{
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: white;
   }
-=======
->>>>>>> 01c7fc2062425457bf5a2f7e2f54919247c8e23c
+
 /* Nav  */
 header {
     width: 100%;
